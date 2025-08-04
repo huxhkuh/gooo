@@ -6,15 +6,12 @@
   <style>
     body {
       margin: 0;
-      display: flex;
-      justify-content: center; /* ממרכז אופקית את הבאנר */
-      align-items: center;    /* ממרכז אנכית את הבאנר (אם תרצה) */
-      height: 100vh;          /* כדי לגרום למרכז אנכי בגובה החלון */
     }
     .banner-container {
       width: 300px;
       height: 600px;
       overflow: hidden;      /* חוסם כל תוכן שמתרחב מעבר למימדים */
+      /* אין כאן centering – הקופסה צמודה לשמאל */
     }
     .banner-container a {
       display: block;
@@ -24,7 +21,7 @@
     .banner-container img {
       width: 100%;
       height: 100%;
-      object-fit: cover;     /* שומר על יחס גובה-רוחב וממלא את הקופסה */
+      object-fit: cover;     /* שומר על יחס גובה-רוחב */
     }
   </style>
 </head>
